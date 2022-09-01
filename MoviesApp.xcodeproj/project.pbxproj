@@ -16,6 +16,9 @@
 		6CD13BE528BFD33700057B68 /* MoviesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD13BE428BFD33700057B68 /* MoviesAppTests.swift */; };
 		6CD13BEF28BFD33700057B68 /* MoviesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD13BEE28BFD33700057B68 /* MoviesAppUITests.swift */; };
 		6CD13BF128BFD33700057B68 /* MoviesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD13BF028BFD33700057B68 /* MoviesAppUITestsLaunchTests.swift */; };
+		6CD13BFF28BFD3D700057B68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD13BFE28BFD3D700057B68 /* SnapKit */; };
+		6CD13C0128BFDBAE00057B68 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD13C0028BFDBAE00057B68 /* MoviesTableViewCell.swift */; };
+		6CD13C0328BFF39700057B68 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD13C0228BFF39700057B68 /* MoviesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		6CD13BEA28BFD33700057B68 /* MoviesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD13BEE28BFD33700057B68 /* MoviesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppUITests.swift; sourceTree = "<group>"; };
 		6CD13BF028BFD33700057B68 /* MoviesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CD13C0028BFDBAE00057B68 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
+		6CD13C0228BFF39700057B68 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD13BFF28BFD3D700057B68 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,8 @@
 				6CD13BCD28BFD33500057B68 /* AppDelegate.swift */,
 				6CD13BCF28BFD33500057B68 /* SceneDelegate.swift */,
 				6CD13BD128BFD33500057B68 /* ViewController.swift */,
+				6CD13C0228BFF39700057B68 /* MoviesModel.swift */,
+				6CD13C0028BFDBAE00057B68 /* MoviesTableViewCell.swift */,
 				6CD13BD328BFD33500057B68 /* Main.storyboard */,
 				6CD13BD628BFD33700057B68 /* Assets.xcassets */,
 				6CD13BD828BFD33700057B68 /* LaunchScreen.storyboard */,
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = MoviesApp;
+			packageProductDependencies = (
+				6CD13BFE28BFD3D700057B68 /* SnapKit */,
+			);
 			productName = MoviesApp;
 			productReference = 6CD13BCA28BFD33500057B68 /* MoviesApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 6CD13BC128BFD33500057B68;
+			packageReferences = (
+				6CD13BFD28BFD3D700057B68 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 6CD13BCB28BFD33500057B68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD13C0328BFF39700057B68 /* MoviesModel.swift in Sources */,
 				6CD13BD228BFD33500057B68 /* ViewController.swift in Sources */,
 				6CD13BCE28BFD33500057B68 /* AppDelegate.swift in Sources */,
+				6CD13C0128BFDBAE00057B68 /* MoviesTableViewCell.swift in Sources */,
 				6CD13BD028BFD33500057B68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CD13BFD28BFD3D700057B68 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CD13BFE28BFD3D700057B68 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD13BFD28BFD3D700057B68 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CD13BC228BFD33500057B68 /* Project object */;
 }
