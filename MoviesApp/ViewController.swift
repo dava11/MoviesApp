@@ -13,8 +13,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var moviesArray: [MoviesModel] = [] {
         didSet{
-            moviesTableView.reloadData()
-           
+      
+             let indexPath = IndexPath(row: moviesArray.count - 1, section: 0)
+            moviesTableView.insertRows(at: [indexPath], with: .none)
+
         }
     }
     var titleMovieTextField = UITextField()
@@ -106,11 +108,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         moviesArray.append(newMovies)
     }
-    
-    func createAlert() {
-        
-    }
-
-
 }
+
 
